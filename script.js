@@ -1,33 +1,43 @@
 
-var q1 = document.querySelector("#All input").value;
-var q2 = document.querySelector("#Pandemic input").value;
-var q3 = document.querySelector("#Smallpox input").value;
-var q4 = document.querySelector("#Neutral input").value;
-var q5 = document.querySelector("#Lungs input").value;
-var numb = 0;
-
+let numb = 0;
 
 function result() {
 
-    if (q1 == "All") {
-        numb++
-    }
-    if (q2 == "Pandemic") {
-        numb++
-    }
-    if (q3 == "Smallpox") {
-        numb++
-    }
-    if (q4 == "Neutral") {
-        numb++
-    }
-    if (q5 == "Lungs") {
+   let q1 = document.querySelector('#All').checked;
+   if (q1 == true) {
+      numb += 1;
+   }
 
-        numb++
-    }
-    alert("Congratulation! You got Full marks");
+   let q2 = document.querySelector('#Pandemic').checked;
+   if (q2 == true) {
+      numb += 1;
+   }
 
+   let q3 = document.querySelector('#Smallpox').checked;
+   if (q3 == true) {
+      numb += 1;
+   }
+
+   let q4 = document.querySelector('#Neutral').checked;
+   if (q4 == true) {
+      numb += 1;
+   }
+
+
+   let q5 = document.querySelector('#Lungs').checked;
+   if (q5 == true) {
+      numb += 1;
+   }
+   
+   if (numb >= 5) {
+      alert("Congratulations!! your got a full marks " + numb + " out of 5");
+   } else {
+      alert("Your marks is " + numb + " out of 5");
+   }
 }
+
+
+
 
 
 

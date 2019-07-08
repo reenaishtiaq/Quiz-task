@@ -16,7 +16,7 @@ form {
 }
 #questions {
     background-image: linear-gradient(#ffffff, #f1ddde, #e5bebf, #e0aeb1, #dca8aa);
-    margin: 2em;
+    margin: 5em;
     border-radius: 2%;
 }
 #questions p {
@@ -43,4 +43,28 @@ button {
 button:hover {
     background-color: #115052;
     transition: all ease-in 0.5s;
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        width: 100%;
+    }
+    #questions {
+        margin: 7em 7em 5em 7em;
+
+    }
+    h1 {
+        margin: 1em 3em 0em 3em;
+    }
+}
+
+@media only screen and (min-width: 300px){
+   #questions {
+        margin: 3em 1em 3em 1em;
+
+    }
+    p {
+        font-size: 18px;
+    }
+    
 }
