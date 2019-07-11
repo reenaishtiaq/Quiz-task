@@ -1,7 +1,9 @@
 
-let numb = 0;
+
 
 function result() {
+   
+   let numb = 0;
 
    let q1 = document.querySelector('#All').checked;
    if (q1 == true) {
