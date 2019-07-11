@@ -29,7 +29,7 @@ function result() {
       numb += 1;
    }
    
-   if (numb >= 5) {
+   if (numb == 5) {
       alert("Congratulations!! your got a full marks " + numb + " out of 5");
    } else {
       alert("Your marks is " + numb + " out of 5");
